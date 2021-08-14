@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.login.first_page">
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:title="Delete"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add_period"
+        android:orderInCategory="100"
+        android:title="Extend Period"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_add_fees"
+        android:orderInCategory="100"
+        android:title="Add fees"
+        app:showAsAction="never" />
+</menu>

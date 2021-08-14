@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.login" >
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_new1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="  Log In To MessMister" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".first_page"
+            android:label="@string/title_activity_first_page" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:label="  Sign Up For MessMister" >
+        </activity>
+        <activity
+            android:name=".homepage"
+            android:label="@string/title_activity_homepage" >
+        </activity>
+        <activity
+            android:name=".Members"
+            android:label="@string/title_activity_members" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bills"
+            android:label="@string/title_activity_bills" >
+        </activity>
+        <activity
+            android:name=".Staff"
+            android:label="@string/title_activity_staff" >
+        </activity>
+        <activity
+            android:name=".Balance"
+            android:label="@string/title_activity_balance" >
+        </activity>
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".CreateMember"
+            android:label="@string/title_activity_create_member"
+            android:parentActivityName=".Members" >
+        </activity>
+        <activity
+            android:name=".CreateStaff"
+            android:label="@string/title_activity_create_staff" >
+        </activity>
+        <activity
+            android:name=".CreateBill"
+            android:label="@string/title_activity_create_bill" >
+        </activity>
+        <activity
+            android:name=".EditMember"
+            android:label="EditMember"
+            android:parentActivityName=".MemberDescription" >
+        </activity>
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="NOTIFICATION" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".NotificationService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name=".SnoozeReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="SNOOZE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".MemberDescription" >
+        </activity>
+        <activity
+            android:name=".Groups"
+            android:label="@string/title_activity_groups"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.login.Members" />
+        </activity>
+
+        <receiver
+            android:name=".OnAlarmReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+        <receiver
+            android:name=".WhatsappReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="WHATSAPPACTION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".MonthlyUpdateService"
+            android:exported="false" >
+        </service>
+
+        <receiver
+            android:name=".MonthlyUpdateReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

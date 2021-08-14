@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:id="@+id/g1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item1"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="HOME"></item>
+    </group>
+    <group
+        android:id="@+id/g2"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/item2"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="MEMBERS">
+
+        </item>
+    </group>
+    <group
+        android:id="@+id/g3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item5"
+            android:icon="@drawable/ic_note_add_white_24dp"
+            android:title="BALANCE SHEET">
+
+        </item>
+    </group>
+
+
+    <group
+        android:id="@+id/g4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item7"
+            android:icon="@drawable/ic_developer_mode_black_24dp"
+            android:title="ABOUT">
+
+        </item>
+    </group>
+    <group
+        android:id="@+id/g5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nothing"
+            android:title=""></item>
+    </group>
+</menu>

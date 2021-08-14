@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all_extend"
+        android:title="Extend Period" />
+    <item
+        android:id="@+id/all_call"
+        android:title="Call" />
+    <item
+        android:id="@+id/all_add"
+        android:title="Add Fees"></item>
+
+</menu>

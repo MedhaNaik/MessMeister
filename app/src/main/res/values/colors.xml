@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryBlue">#1565c0</color>
+    <color name="accentPink">#E91E63</color>
+    <color name="primaryDark">#0D47A1</color>
+    <color name="pink_pressed">#ea3b77</color>
+</resources>
